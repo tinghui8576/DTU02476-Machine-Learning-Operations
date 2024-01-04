@@ -11,9 +11,8 @@ COPY requirements.txt requirements.txt
 COPY requirements_dev.txt requirements_dev.txt
 COPY pyproject.toml pyproject.toml
 COPY src/ src/
-COPY data/ data/
 
 WORKDIR /
 RUN pip install . --no-cache-dir #(1)
-RUN mkdir -p result
-CMD ["python", "-u", "src/train_model.py", "train", "--lr", "1e-4"]
+#RUN mkdir -p result
+ENTRYPOINT ["python", "-u", "src/predict_model.py"]

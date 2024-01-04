@@ -80,9 +80,21 @@ def predict(
         Tensor of shape [N, d] where N is the number of samples and d is the output dimension of the model
 
     """
-    
-    return torch.cat([model(batch["data"]) for batch in dataloader], 0)
+    predict = []
+    for batch in dataloader:
+
+        # load data and labels in the batch
+        data = batch['data']
+
+        output = model.forward(data)
+
+        ## Calculating the accuracy
+        # Model's output is log-softmax, take exponential to get the probabilities
+        ps = torch.exp(output)
+        predict.append(ps.max(1)[1])
+
+    return predict
 
 if __name__ == "__main__":
     model, path = loadfile(sys.argv[1], str(sys.argv[2]))
-    predict(model, path)
+    print(predict(model, path))

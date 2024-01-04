@@ -79,7 +79,7 @@ def plot_fig(train_losses, test_losses):
     plt.ylabel('Loss')
     plt.legend()
 
-    plt.savefig('reports/figures/training_curve.png')
+    plt.savefig('result/training_curve.png')
 
 
 
@@ -174,7 +174,7 @@ def train(lr):
             running_loss = 0
             model.train()
     plot_fig(train_losses, test_losses)
-    torch.save(model.state_dict(), 'models/trained_model.pt')
+    torch.save(model.state_dict(), 'result/trained_model.pt')
 
 
 

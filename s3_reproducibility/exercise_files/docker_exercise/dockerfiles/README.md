@@ -16,3 +16,9 @@ $ docker run -it <NAME> \\
 /# exit \\
 \# to kill specific container \\
 $ docker rm <container_id> \\
+
+# BUILD \\
+\# if stay in the parent directory
+$ docker build -f dockerfile/trainer.dockerfile . -t trainer:latest
+\# if inside dockerfile directory
+$ docker build -f trainer.dockerfile ../ -t trainer:latest

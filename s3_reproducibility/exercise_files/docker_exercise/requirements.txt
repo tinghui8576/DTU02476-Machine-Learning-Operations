@@ -1,3 +1,4 @@
 click >= 8.1.7
 torch >= 2.1.0
 torchvision >= 0.16.2
+matplotlib >= 3.7.2

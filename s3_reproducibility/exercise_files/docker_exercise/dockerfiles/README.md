@@ -12,6 +12,8 @@ $ docker ps -a \\
 # RUN and EXIT and REMOVE \\
 \# using this can run multiple commands within the virtual machine \\
 $ docker run -it <NAME> \\
+\# to give argument [for mac]
+$ docker run --name experiment2 --rm -v $(pwd)<Yourpath1>:<Virtualpath1> -v $(pwd)<Yourpath2>:<Virtualpath2> predict:latest <Virtualpath1> <Virtualpath2>
 \# to leave the the container \\
 /# exit \\
 \# to kill specific container \\

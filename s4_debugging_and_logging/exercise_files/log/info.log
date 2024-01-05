@@ -1,0 +1,24 @@
+INFO 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:53]
+Informative messages from your code.
+
+WARNING 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:54]
+Everything works but there is something to be aware of.
+
+ERROR 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:55]
+There's been a mistake with the process.
+
+CRITICAL 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:56]
+There is something terribly wrong and process may terminate.
+
+INFO 2024-01-05 11:47:38,125 [root:mylogger.py:<module>:57]
+Informative messages from your code.
+
+WARNING 2024-01-05 11:47:38,127 [root:mylogger.py:<module>:58]
+Everything works but there is something to be aware of.
+
+ERROR 2024-01-05 11:47:38,127 [root:mylogger.py:<module>:59]
+There's been a mistake with the process.
+
+CRITICAL 2024-01-05 11:47:38,128 [root:mylogger.py:<module>:60]
+There is something terribly wrong and process may terminate.
+

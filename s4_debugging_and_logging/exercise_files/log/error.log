@@ -1,0 +1,12 @@
+ERROR 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:55]
+There's been a mistake with the process.
+
+CRITICAL 2024-01-05 11:44:08,376 [__main__:mylogger.py:<module>:56]
+There is something terribly wrong and process may terminate.
+
+ERROR 2024-01-05 11:47:38,127 [root:mylogger.py:<module>:59]
+There's been a mistake with the process.
+
+CRITICAL 2024-01-05 11:47:38,128 [root:mylogger.py:<module>:60]
+There is something terribly wrong and process may terminate.
+

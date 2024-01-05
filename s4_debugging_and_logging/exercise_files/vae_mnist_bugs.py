@@ -112,29 +112,36 @@ optimizer = Adam(model.parameters(), lr=lr)
 print("Start training VAE...")
 model.train()
 for epoch in range(epochs):
-    overall_loss = 0
-    for batch_idx, (x, _) in enumerate(train_loader):
-        optimizer.zero_grad()
-        if batch_idx % 100 == 0:
-            print(batch_idx)
-        x = x.view(batch_size, x_dim)
-        x = x.to(DEVICE)
-        
+    with torch.profiler.profile(
+        schedule=torch.profiler.schedule(wait=2, warmup=2, active=6, repeat=1),
+        on_trace_ready=torch.profiler.tensorboard_trace_handler("profiler"),
+        with_stack=True,
+    ) as prof:
+        # code that I want to profile
+        overall_loss = 0
+        for batch_idx, (x, _) in enumerate(train_loader):
+            optimizer.zero_grad()
+            if batch_idx % 100 == 0:
+                print(batch_idx)
+            x = x.view(batch_size, x_dim)
+            x = x.to(DEVICE)
+            
+            
+            x_hat, mean, log_var = model(x)
+            loss = loss_function(x, x_hat, mean, log_var)
 
-        x_hat, mean, log_var = model(x)
-        loss = loss_function(x, x_hat, mean, log_var)
+            overall_loss += loss.item()
 
-        overall_loss += loss.item()
-
-        loss.backward()
-        optimizer.step()
-    print(
-        "\tEpoch",
-        epoch + 1,
-        "complete!",
-        "\tAverage Loss: ",
-        overall_loss / (batch_idx * batch_size),
-    )
+            loss.backward()
+            optimizer.step()
+            prof.step()
+        print(
+            "\tEpoch",
+            epoch + 1,
+            "complete!",
+            "\tAverage Loss: ",
+            overall_loss / (batch_idx * batch_size),
+        )
 print("Finish!!")
 
 # Generate reconstructions

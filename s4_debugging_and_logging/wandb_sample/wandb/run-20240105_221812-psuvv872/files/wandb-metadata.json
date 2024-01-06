@@ -1,0 +1,37 @@
+{
+    "os": "macOS-13.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-01-05T21:18:12.997735",
+    "startedAt": "2024-01-05T21:18:12.388551",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--epochs=10",
+        "--learning_rate=0.002"
+    ],
+    "state": "running",
+    "program": "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/wandb_sample/train.py",
+    "codePath": "s4_debugging_and_logging/wandb_sample/train.py",
+    "git": {
+        "remote": "https://github.com/tinghui8576/DTU02476-Machine-Learning-Operations.git",
+        "commit": "7bcda4f98e88749fb922b1ac3074b34795897776"
+    },
+    "email": "tinghui1738cheng@gmail.com",
+    "root": "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations",
+    "host": "MacBook-Pro-2.localdomain",
+    "username": "tinghui",
+    "executable": "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 11.010688781738281
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

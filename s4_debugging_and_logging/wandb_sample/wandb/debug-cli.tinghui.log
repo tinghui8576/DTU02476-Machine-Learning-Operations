@@ -1,0 +1,885 @@
+2024-01-05 16:50:51 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 242, in login
+    wandb.setup(settings=login_settings)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_manager.py", line 138, in __init__
+    self._service.start()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 237, in start
+    self._launch_server()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 231, in _launch_server
+    _sentry.reraise(e)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 229, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 107, in _wait_for_ports
+    raise ServiceStartProcessError(
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+2024-01-05 16:51:54 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 242, in login
+    wandb.setup(settings=login_settings)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_manager.py", line 138, in __init__
+    self._service.start()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 237, in start
+    self._launch_server()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 231, in _launch_server
+    _sentry.reraise(e)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 229, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 107, in _wait_for_ports
+    raise ServiceStartProcessError(
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+2024-01-05 16:52:28 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 242, in login
+    wandb.setup(settings=login_settings)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_manager.py", line 138, in __init__
+    self._service.start()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 237, in start
+    self._launch_server()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 231, in _launch_server
+    _sentry.reraise(e)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 229, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 107, in _wait_for_ports
+    raise ServiceStartProcessError(
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+2024-01-05 16:53:25 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 242, in login
+    wandb.setup(settings=login_settings)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_manager.py", line 138, in __init__
+    self._service.start()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 237, in start
+    self._launch_server()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 231, in _launch_server
+    _sentry.reraise(e)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 229, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 107, in _wait_for_ports
+    raise ServiceStartProcessError(
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+2024-01-05 16:54:20 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 243, in login
+    wandb.setup(settings=login_settings)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_manager.py", line 145, in __init__
+    self._service.start()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 199, in start
+    self._launch_server()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 193, in _launch_server
+    _sentry.reraise(e)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 146, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 191, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/service/service.py", line 116, in _wait_for_ports
+    raise ServiceStartProcessError(
+wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+
+2024-01-05 22:06:31 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:06:59 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2354, in _validate_config_and_fill_distribution
+    raise ValueError("sweep config must have a parameters section")
+ValueError: sweep config must have a parameters section
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2354, in _validate_config_and_fill_distribution
+    raise ValueError("sweep config must have a parameters section")
+wandb.errors.CommError: sweep config must have a parameters section
+
+2024-01-05 22:07:09 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2354, in _validate_config_and_fill_distribution
+    raise ValueError("sweep config must have a parameters section")
+ValueError: sweep config must have a parameters section
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2354, in _validate_config_and_fill_distribution
+    raise ValueError("sweep config must have a parameters section")
+wandb.errors.CommError: sweep config must have a parameters section
+
+2024-01-05 22:07:21 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:07:32 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:07:41 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:09:03 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:11:20 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2358, in _validate_config_and_fill_distribution
+    if "min" in parameter and "max" in parameter:
+       ^^^^^^^^^^^^^^^^^^
+wandb.errors.CommError: argument of type 'int' is not iterable
+
+2024-01-05 22:11:39 ERROR 400 response executing GraphQL.
+2024-01-05 22:11:39 ERROR {"errors":[{"message":"Invalid configuration for hyperparameter 'architecture'","path":["upsertSweep"]}],"data":{"upsertSweep":null}}
+2024-01-05 22:11:39 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2491, in upsert_sweep
+    raise e
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2476, in upsert_sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/util.py", line 865, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Invalid configuration for hyperparameter 'architecture'
+
+2024-01-05 22:13:19 ERROR 400 response executing GraphQL.
+2024-01-05 22:13:19 ERROR {"errors":[{"message":"Invalid configuration for hyperparameter 'architecture'","path":["upsertSweep"]}],"data":{"upsertSweep":null}}
+2024-01-05 22:13:19 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2491, in upsert_sweep
+    raise e
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2476, in upsert_sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/util.py", line 865, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Invalid configuration for hyperparameter 'architecture'
+
+2024-01-05 22:13:42 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2356, in _validate_config_and_fill_distribution
+    for parameter_name in config["parameters"]:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2356, in _validate_config_and_fill_distribution
+    for parameter_name in config["parameters"]:
+wandb.errors.CommError: 'NoneType' object is not iterable
+
+2024-01-05 22:13:56 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2356, in _validate_config_and_fill_distribution
+    for parameter_name in config["parameters"]:
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2471, in upsert_sweep
+    config = self._validate_config_and_fill_distribution(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2356, in _validate_config_and_fill_distribution
+    for parameter_name in config["parameters"]:
+wandb.errors.CommError: 'NoneType' object is not iterable
+
+2024-01-05 22:14:47 ERROR 400 response executing GraphQL.
+2024-01-05 22:14:47 ERROR {"errors":[{"message":"Invalid sweep config: Parameter learning_rate is a disallowed type with grid search. Grid search requires all parameters to be categorical, constant, int_uniform, or q_uniform. Specification of probabilities for categorical parameters is disallowed in grid search","path":["upsertSweep"]}],"data":{"upsertSweep":null}}
+2024-01-05 22:14:47 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 981, in sweep
+    sweep_id, warnings = api.upsert_sweep(
+                         ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 120, in upsert_sweep
+    return self.api.upsert_sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2491, in upsert_sweep
+    raise e
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2476, in upsert_sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/util.py", line 865, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Invalid sweep config: Parameter learning_rate is a disallowed type with grid search. Grid search requires all parameters to be categorical, constant, int_uniform, or q_uniform. Specification of probabilities for categorical parameters is disallowed in grid search
+
+2024-01-05 22:15:21 ERROR 400 response executing GraphQL.
+2024-01-05 22:15:21 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2024-01-05 22:15:21 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 792, in sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 1399, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 641, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 586, in run_agent
+    agent.run()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 231, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 117, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2024-01-05 22:16:28 ERROR 400 response executing GraphQL.
+2024-01-05 22:16:28 ERROR {"errors":[{"message":"entityName required for project query","path":["project"]}],"data":{"project":null}}
+2024-01-05 22:16:28 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 792, in sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 1399, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 641, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 586, in run_agent
+    agent.run()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 231, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 117, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: entityName required for project query (Error 400: Bad Request)
+
+2024-01-05 22:18:11 INFO Running runs: []
+2024-01-05 22:18:11 INFO Agent received command: run
+2024-01-05 22:18:11 INFO Agent starting run with config:
+	epochs: 10
+	learning_rate: 0.002
+2024-01-05 22:18:11 INFO About to run command: /usr/bin/env python train.py --epochs=10 --learning_rate=0.002
+2024-01-05 22:18:16 INFO Running runs: ['psuvv872']
+2024-01-05 22:18:16 INFO Cleaning up finished run: psuvv872
+2024-01-05 22:18:20 INFO Agent received command: exit
+2024-01-05 22:18:20 INFO Received exit command. Killing runs and quitting.
+2024-01-05 22:18:29 ERROR 400 response executing GraphQL.
+2024-01-05 22:18:29 ERROR {"errors":[{"message":"Sweep tinghui/exercise_wandb/xqdne1ep is not running","path":["createAgent"]}],"data":{"createAgent":null}}
+2024-01-05 22:18:29 ERROR Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/cli/cli.py", line 1399, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 641, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 586, in run_agent
+    agent.run()
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/wandb_agent.py", line 242, in run
+    agent = self._api.register_agent(socket.gethostname(), sweep_id=self._sweep_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/internal.py", line 141, in register_agent
+    return self.api.register_agent(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2269, in register_agent
+    response = self.gql(
+               ^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/util.py", line 865, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Sweep tinghui/exercise_wandb/xqdne1ep is not running
+
+2024-01-05 22:18:49 INFO Running runs: []
+2024-01-05 22:18:49 INFO Agent received command: run
+2024-01-05 22:18:49 INFO Agent starting run with config:
+	epochs: 10
+	learning_rate: 0.002
+2024-01-05 22:18:49 INFO About to run command: /usr/bin/env python train.py --epochs=10 --learning_rate=0.002
+2024-01-05 22:18:54 INFO Running runs: ['b9z33gku']
+2024-01-05 22:18:59 INFO Cleaning up finished run: b9z33gku
+2024-01-05 22:19:00 INFO Agent received command: exit
+2024-01-05 22:19:00 INFO Received exit command. Killing runs and quitting.

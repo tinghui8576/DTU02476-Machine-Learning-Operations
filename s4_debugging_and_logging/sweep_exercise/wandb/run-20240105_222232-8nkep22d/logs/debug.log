@@ -1,0 +1,35 @@
+2024-01-05 22:22:32,668 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Configure stats pid to 19852
+2024-01-05 22:22:32,668 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Loading settings from /Users/tinghui/.config/wandb/settings
+2024-01-05 22:22:32,668 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Loading settings from /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/settings
+2024-01-05 22:22:32,669 WARNING MainThread:19852 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'tinghui', 'project': 'sweep_exercise', 'sweep_id': 'qmid1e7q', 'root_dir': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise', 'run_id': '8nkep22d', 'sweep_param_path': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/sweep-qmid1e7q/config-8nkep22d.yaml'}
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 's4_debugging_and_logging/sweep_exercise/train.py', 'program': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/train.py'}
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:_log_setup():507] Logging user logs to /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_222232-8nkep22d/logs/debug.log
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:_log_setup():508] Logging internal logs to /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_222232-8nkep22d/logs/debug-internal.log
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:init():547] calling init triggers
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:init():554] wandb.init called with sweep_config: {'batch_size': 100, 'epochs': 5, 'hidden_dim': 400, 'latent_dim': 20, 'lr': 0.0001, 'optimizer': 'adam', 'x_dim': 784}
+config: {'batch_size': 16, 'x_dim': 784, 'hidden_dim': 400, 'latent_dim': 20, 'lr': 0.001, 'epochs': 10}
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:init():595] starting backend
+2024-01-05 22:22:32,669 INFO    MainThread:19852 [wandb_init.py:init():599] setting up manager
+2024-01-05 22:22:32,678 INFO    MainThread:19852 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-01-05 22:22:32,686 INFO    MainThread:19852 [wandb_init.py:init():605] backend started and connected
+2024-01-05 22:22:32,690 INFO    MainThread:19852 [wandb_run.py:_config_callback():1285] config_cb None None {'batch_size': 100, 'epochs': 5, 'hidden_dim': 400, 'latent_dim': 20, 'lr': 0.0001, 'optimizer': 'adam', 'x_dim': 784}
+2024-01-05 22:22:32,692 INFO    MainThread:19852 [wandb_init.py:init():695] updated telemetry
+2024-01-05 22:22:32,711 INFO    MainThread:19852 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2024-01-05 22:22:33,153 INFO    MainThread:19852 [wandb_run.py:_on_init():2176] communicating current version
+2024-01-05 22:22:33,268 INFO    MainThread:19852 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.16.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-01-05 22:22:33,268 INFO    MainThread:19852 [wandb_init.py:init():782] starting run threads in backend
+2024-01-05 22:22:33,330 INFO    MainThread:19852 [wandb_run.py:_console_start():2157] atexit reg
+2024-01-05 22:22:33,331 INFO    MainThread:19852 [wandb_run.py:_redirect():2012] redirect: 3
+2024-01-05 22:22:33,331 INFO    MainThread:19852 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2024-01-05 22:22:33,331 INFO    MainThread:19852 [wandb_run.py:_redirect():2102] Redirects installed.
+2024-01-05 22:22:33,331 INFO    MainThread:19852 [wandb_init.py:init():824] run started, returning control to user process
+2024-01-05 22:22:49,441 INFO    MainThread:19852 [wandb_run.py:_finish():1892] finishing run tinghui/sweep_exercise/8nkep22d
+2024-01-05 22:22:49,441 INFO    MainThread:19852 [wandb_run.py:_atexit_cleanup():2126] got exitcode: 0
+2024-01-05 22:22:49,441 INFO    MainThread:19852 [wandb_run.py:_restore():2109] restore
+2024-01-05 22:22:49,441 INFO    MainThread:19852 [wandb_run.py:_restore():2115] restore done
+2024-01-05 22:22:55,641 INFO    MainThread:19852 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2024-01-05 22:22:55,642 INFO    MainThread:19852 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2024-01-05 22:22:55,650 INFO    MainThread:19852 [wandb_run.py:_footer_sync_info():3434] logging synced files

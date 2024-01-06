@@ -1,0 +1,54 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 39804605.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 236593152.00it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 19637655.70it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 44098446.22it/s]
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to datasets/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting datasets/MNIST/raw/train-images-idx3-ubyte.gz to datasets/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to datasets/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting datasets/MNIST/raw/train-labels-idx1-ubyte.gz to datasets/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to datasets/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting datasets/MNIST/raw/t10k-images-idx3-ubyte.gz to datasets/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to datasets/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting datasets/MNIST/raw/t10k-labels-idx1-ubyte.gz to datasets/MNIST/raw
+Start training VAE...
+0
+100
+200
+300
+400
+500
+	Epoch 1 complete! 	Average Loss:  156.6636405565265
+0
+100
+200
+300
+400
+500
+	Epoch 2 complete! 	Average Loss:  118.88157930861331
+0
+100
+200
+300
+400
+500
+	Epoch 3 complete! 	Average Loss:  113.26168717067509
+0
+100
+200
+300
+400
+500
+	Epoch 4 complete! 	Average Loss:  110.63117882016903
+0
+100
+200
+300
+400
+500
+	Epoch 5 complete! 	Average Loss:  109.13633361918302
+Finish!!
+0

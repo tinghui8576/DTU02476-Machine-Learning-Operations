@@ -1,0 +1,27 @@
+{'batch_size': 100, 'epochs': 5, 'hidden_dim': 400, 'latent_dim': 20, 'lr': 0.0001, 'optimizer': 'sgd', 'x_dim': 784}
+Start training VAE...
+0
+100
+200
+300
+400
+500
+	Epoch 1 complete! 	Average Loss:  246.13283819386479
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 163, in __getattr__
+    return self.__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'validation_loss'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/train.py", line 181, in <module>
+    train(config_defaults)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/train.py", line 148, in train
+    wandb.log({"val_loss": config.validation_loss})
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 165, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'validation_loss'

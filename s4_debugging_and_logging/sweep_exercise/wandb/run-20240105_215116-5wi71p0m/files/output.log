@@ -1,0 +1,15 @@
+Start training VAE...
+0
+100
+200
+300
+400
+500
+	Epoch 1 complete! 	Average Loss:  157.42968767933536
+Traceback (most recent call last):
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/vae_mnist_working.py", line 183, in <module>
+    train(config_defaults)
+  File "/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/vae_mnist_working.py", line 151, in train
+    wandb.log({"val_loss": validation_loss})
+                           ^^^^^^^^^^^^^^^
+NameError: name 'validation_loss' is not defined

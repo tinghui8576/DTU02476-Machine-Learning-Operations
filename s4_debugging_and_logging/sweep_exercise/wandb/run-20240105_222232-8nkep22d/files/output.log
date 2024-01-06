@@ -1,0 +1,39 @@
+{'batch_size': 100, 'epochs': 5, 'hidden_dim': 400, 'latent_dim': 20, 'lr': 0.0001, 'optimizer': 'adam', 'x_dim': 784}
+Start training VAE...
+0
+100
+200
+300
+400
+500
+	Epoch 1 complete! 	Average Loss:  246.97844245617696
+0
+100
+200
+300
+400
+500
+	Epoch 2 complete! 	Average Loss:  170.65635641107576
+0
+100
+200
+300
+400
+500
+	Epoch 3 complete! 	Average Loss:  152.1492904189274
+0
+100
+200
+300
+400
+500
+	Epoch 4 complete! 	Average Loss:  140.95713718828256
+0
+100
+200
+300
+400
+500
+	Epoch 5 complete! 	Average Loss:  133.82883270620306
+Finish!!
+0

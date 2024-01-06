@@ -1,0 +1,180 @@
+2024-01-05 21:59:22,138 INFO    StreamThr :18713 [internal.py:wandb_internal():86] W&B internal server running at pid: 18713, started at: 2024-01-05 21:59:22.137950
+2024-01-05 21:59:22,139 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: status
+2024-01-05 21:59:22,140 INFO    WriterThread:18713 [datastore.py:open_for_write():85] open: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/run-1vpjs595.wandb
+2024-01-05 21:59:22,140 DEBUG   SenderThread:18713 [sender.py:send():375] send: header
+2024-01-05 21:59:22,156 DEBUG   SenderThread:18713 [sender.py:send():375] send: run
+2024-01-05 21:59:22,649 INFO    SenderThread:18713 [dir_watcher.py:__init__():219] watching files in: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files
+2024-01-05 21:59:22,650 INFO    SenderThread:18713 [sender.py:_start_run_threads():1124] run started: 1vpjs595 with start time 1704488362.137499
+2024-01-05 21:59:22,650 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: summary_record
+2024-01-05 21:59:22,650 INFO    SenderThread:18713 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-01-05 21:59:22,654 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: check_version
+2024-01-05 21:59:22,655 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: check_version
+2024-01-05 21:59:22,855 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: run_start
+2024-01-05 21:59:22,861 DEBUG   HandlerThread:18713 [system_info.py:__init__():31] System info init
+2024-01-05 21:59:22,861 DEBUG   HandlerThread:18713 [system_info.py:__init__():46] System info init done
+2024-01-05 21:59:22,862 INFO    HandlerThread:18713 [system_monitor.py:start():181] Starting system monitor
+2024-01-05 21:59:22,862 INFO    SystemMonitor:18713 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-01-05 21:59:22,862 INFO    HandlerThread:18713 [system_monitor.py:probe():201] Collecting system info
+2024-01-05 21:59:22,862 INFO    SystemMonitor:18713 [interfaces.py:start():190] Started cpu monitoring
+2024-01-05 21:59:22,862 INFO    SystemMonitor:18713 [interfaces.py:start():190] Started disk monitoring
+2024-01-05 21:59:22,863 INFO    SystemMonitor:18713 [interfaces.py:start():190] Started gpuapple monitoring
+2024-01-05 21:59:22,864 INFO    SystemMonitor:18713 [interfaces.py:start():190] Started memory monitoring
+2024-01-05 21:59:22,865 DEBUG   HandlerThread:18713 [system_info.py:probe():195] Probing system
+2024-01-05 21:59:22,866 INFO    SystemMonitor:18713 [interfaces.py:start():190] Started network monitoring
+2024-01-05 21:59:22,869 DEBUG   HandlerThread:18713 [system_info.py:_probe_git():180] Probing git
+2024-01-05 21:59:22,887 DEBUG   HandlerThread:18713 [system_info.py:_probe_git():188] Probing git done
+2024-01-05 21:59:22,888 DEBUG   HandlerThread:18713 [system_info.py:probe():240] Probing system done
+2024-01-05 21:59:22,888 DEBUG   HandlerThread:18713 [system_monitor.py:probe():210] {'os': 'macOS-13.4.1-arm64-arm-64bit', 'python': '3.11.5', 'heartbeatAt': '2024-01-05T20:59:22.866256', 'startedAt': '2024-01-05T20:59:22.131515', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/train.py', 'codePath': 's4_debugging_and_logging/sweep_exercise/train.py', 'git': {'remote': 'https://github.com/tinghui8576/DTU02476-Machine-Learning-Operations.git', 'commit': '7bcda4f98e88749fb922b1ac3074b34795897776'}, 'email': 'tinghui1738cheng@gmail.com', 'root': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations', 'host': 'MacBook-Pro-2.localdomain', 'username': 'tinghui', 'executable': '/Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/env/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'total': 460.4317207336426, 'used': 11.010688781738281}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-01-05 21:59:22,888 INFO    HandlerThread:18713 [system_monitor.py:probe():211] Finished collecting system info
+2024-01-05 21:59:22,888 INFO    HandlerThread:18713 [system_monitor.py:probe():214] Publishing system info
+2024-01-05 21:59:22,888 DEBUG   HandlerThread:18713 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-01-05 21:59:22,888 DEBUG   HandlerThread:18713 [system_info.py:_save_pip():67] Saving pip packages done
+2024-01-05 21:59:22,888 INFO    HandlerThread:18713 [system_monitor.py:probe():216] Finished publishing system info
+2024-01-05 21:59:22,892 DEBUG   SenderThread:18713 [sender.py:send():375] send: files
+2024-01-05 21:59:22,892 INFO    SenderThread:18713 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-01-05 21:59:22,895 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: stop_status
+2024-01-05 21:59:22,895 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: stop_status
+2024-01-05 21:59:23,158 DEBUG   SenderThread:18713 [sender.py:send():375] send: telemetry
+2024-01-05 21:59:23,450 INFO    wandb-upload_0:18713 [upload_job.py:push():137] Uploaded file /var/folders/z2/m5_kp65x4ydbtt3mq8bcpw_r0000gn/T/tmpeeh5on5nwandb/sgl6ne8e-wandb-metadata.json
+2024-01-05 21:59:23,655 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-metadata.json
+2024-01-05 21:59:23,655 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:23,655 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-summary.json
+2024-01-05 21:59:23,655 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_created():278] file/dir created: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/requirements.txt
+2024-01-05 21:59:25,665 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:27,287 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: status_report
+2024-01-05 21:59:27,673 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:29,683 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:31,694 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:32,484 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: status_report
+2024-01-05 21:59:33,172 DEBUG   SenderThread:18713 [sender.py:send():375] send: exit
+2024-01-05 21:59:33,172 INFO    SenderThread:18713 [sender.py:send_exit():598] handling exit code: 1
+2024-01-05 21:59:33,172 INFO    SenderThread:18713 [sender.py:send_exit():600] handling runtime: 10
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:send_exit():606] send defer
+2024-01-05 21:59:33,174 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,174 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 0
+2024-01-05 21:59:33,174 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 1
+2024-01-05 21:59:33,174 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,174 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 1
+2024-01-05 21:59:33,174 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-01-05 21:59:33,174 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 2
+2024-01-05 21:59:33,175 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 2
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [system_monitor.py:finish():190] Stopping system monitor
+2024-01-05 21:59:33,175 DEBUG   SystemMonitor:18713 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-01-05 21:59:33,175 DEBUG   SystemMonitor:18713 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-01-05 21:59:33,175 DEBUG   SystemMonitor:18713 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [interfaces.py:finish():202] Joined disk monitor
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [interfaces.py:finish():202] Joined memory monitor
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [interfaces.py:finish():202] Joined network monitor
+2024-01-05 21:59:33,175 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 3
+2024-01-05 21:59:33,175 DEBUG   SenderThread:18713 [sender.py:send():375] send: telemetry
+2024-01-05 21:59:33,175 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 3
+2024-01-05 21:59:33,175 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 4
+2024-01-05 21:59:33,175 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 4
+2024-01-05 21:59:33,175 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-01-05 21:59:33,175 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 5
+2024-01-05 21:59:33,175 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,175 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 5
+2024-01-05 21:59:33,176 DEBUG   SenderThread:18713 [sender.py:send():375] send: summary
+2024-01-05 21:59:33,176 INFO    SenderThread:18713 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-01-05 21:59:33,176 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,176 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-01-05 21:59:33,176 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 6
+2024-01-05 21:59:33,176 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,176 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 6
+2024-01-05 21:59:33,176 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,176 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-01-05 21:59:33,177 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: status_report
+2024-01-05 21:59:33,366 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 7
+2024-01-05 21:59:33,366 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:33,366 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 7
+2024-01-05 21:59:33,366 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:33,366 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-01-05 21:59:33,702 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-summary.json
+2024-01-05 21:59:33,703 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/config.yaml
+2024-01-05 21:59:33,703 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:34,176 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-05 21:59:35,714 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:37,183 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 8
+2024-01-05 21:59:37,183 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: poll_exit
+2024-01-05 21:59:37,184 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:37,184 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 8
+2024-01-05 21:59:37,184 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:37,184 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-01-05 21:59:37,187 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 9
+2024-01-05 21:59:37,187 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:37,187 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 9
+2024-01-05 21:59:37,187 DEBUG   SenderThread:18713 [sender.py:send():375] send: artifact
+2024-01-05 21:59:37,722 INFO    Thread-12 :18713 [dir_watcher.py:_on_file_modified():295] file/dir modified: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:37,994 INFO    SenderThread:18713 [sender.py:send_artifact():1474] sent artifact job-https___github.com_tinghui8576_DTU02476-Machine-Learning-Operations.git_s4_debugging_and_logging_sweep_exercise_train.py - {'id': 'QXJ0aWZhY3Q6NjgyNzkzOTEy', 'digest': '0deb145dde8f50e54ca9dc14968358ea', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_tinghui8576_DTU02476-Machine-Learning-Operations.git_s4_debugging_and_logging_sweep_exercise_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_tinghui8576_DTU02476-Machine-Learning-Operations.git_s4_debugging_and_logging_sweep_exercise_train.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNzc4MDg1NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjgyNzkzOTEy', 'versionIndex': 0}}, 'version': 'v0'}
+2024-01-05 21:59:37,994 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:37,994 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-01-05 21:59:37,994 INFO    SenderThread:18713 [dir_watcher.py:finish():365] shutting down directory watcher
+2024-01-05 21:59:38,725 INFO    SenderThread:18713 [dir_watcher.py:finish():395] scan: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files
+2024-01-05 21:59:38,725 INFO    SenderThread:18713 [dir_watcher.py:finish():409] scan save: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/requirements.txt requirements.txt
+2024-01-05 21:59:38,725 INFO    SenderThread:18713 [dir_watcher.py:finish():409] scan save: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log output.log
+2024-01-05 21:59:38,727 INFO    SenderThread:18713 [dir_watcher.py:finish():409] scan save: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/config.yaml config.yaml
+2024-01-05 21:59:38,728 INFO    SenderThread:18713 [dir_watcher.py:finish():409] scan save: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-summary.json wandb-summary.json
+2024-01-05 21:59:38,729 INFO    SenderThread:18713 [dir_watcher.py:finish():409] scan save: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-metadata.json wandb-metadata.json
+2024-01-05 21:59:38,729 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 10
+2024-01-05 21:59:38,729 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:38,729 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 10
+2024-01-05 21:59:38,730 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:38,731 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-01-05 21:59:38,731 INFO    SenderThread:18713 [file_pusher.py:finish():168] shutting down file pusher
+2024-01-05 21:59:39,138 INFO    wandb-upload_2:18713 [upload_job.py:push():137] Uploaded file /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/config.yaml
+2024-01-05 21:59:39,196 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: keepalive
+2024-01-05 21:59:39,219 INFO    wandb-upload_0:18713 [upload_job.py:push():137] Uploaded file /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/requirements.txt
+2024-01-05 21:59:39,337 INFO    wandb-upload_3:18713 [upload_job.py:push():137] Uploaded file /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/wandb-summary.json
+2024-01-05 21:59:39,421 INFO    wandb-upload_1:18713 [upload_job.py:push():137] Uploaded file /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/files/output.log
+2024-01-05 21:59:39,622 INFO    Thread-11 (_thread_body):18713 [sender.py:transition_state():626] send defer: 11
+2024-01-05 21:59:39,623 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:39,624 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 11
+2024-01-05 21:59:39,624 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:39,624 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-01-05 21:59:39,624 INFO    SenderThread:18713 [file_pusher.py:join():173] waiting for file pusher
+2024-01-05 21:59:39,625 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 12
+2024-01-05 21:59:39,625 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:39,625 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 12
+2024-01-05 21:59:39,625 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:39,625 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-01-05 21:59:39,789 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 13
+2024-01-05 21:59:39,789 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:39,789 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 13
+2024-01-05 21:59:39,790 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:39,790 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-01-05 21:59:39,790 INFO    SenderThread:18713 [sender.py:transition_state():626] send defer: 14
+2024-01-05 21:59:39,790 DEBUG   SenderThread:18713 [sender.py:send():375] send: final
+2024-01-05 21:59:39,790 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: defer
+2024-01-05 21:59:39,790 DEBUG   SenderThread:18713 [sender.py:send():375] send: footer
+2024-01-05 21:59:39,790 INFO    HandlerThread:18713 [handler.py:handle_request_defer():170] handle defer: 14
+2024-01-05 21:59:39,790 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: defer
+2024-01-05 21:59:39,791 INFO    SenderThread:18713 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-01-05 21:59:39,791 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: poll_exit
+2024-01-05 21:59:39,791 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: poll_exit
+2024-01-05 21:59:39,793 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: server_info
+2024-01-05 21:59:39,794 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: get_summary
+2024-01-05 21:59:39,794 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: sampled_history
+2024-01-05 21:59:39,794 DEBUG   SenderThread:18713 [sender.py:send_request():402] send_request: server_info
+2024-01-05 21:59:39,938 INFO    MainThread:18713 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2024-01-05 21:59:39,938 INFO    MainThread:18713 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2024-01-05 21:59:39,939 INFO    MainThread:18713 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2024-01-05 21:59:39,940 DEBUG   HandlerThread:18713 [handler.py:handle_request():144] handle_request: shutdown
+2024-01-05 21:59:39,940 INFO    HandlerThread:18713 [handler.py:finish():845] shutting down handler
+2024-01-05 21:59:40,795 INFO    WriterThread:18713 [datastore.py:close():298] close: /Users/tinghui/workspace/github/DTU02476-Machine-Learning-Operations/s4_debugging_and_logging/sweep_exercise/wandb/run-20240105_215922-1vpjs595/run-1vpjs595.wandb
+2024-01-05 21:59:40,939 INFO    SenderThread:18713 [sender.py:finish():1550] shutting down sender
+2024-01-05 21:59:40,939 INFO    SenderThread:18713 [file_pusher.py:finish():168] shutting down file pusher
+2024-01-05 21:59:40,939 INFO    SenderThread:18713 [file_pusher.py:join():173] waiting for file pusher

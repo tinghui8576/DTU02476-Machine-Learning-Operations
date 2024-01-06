@@ -1,0 +1,16 @@
+wandb_version: 1
+
+batch_size:
+  value: 100
+epochs:
+  value: 5
+hidden_dim:
+  value: 400
+latent_dim:
+  value: 20
+lr:
+  value: 0.0001
+optimizer:
+  value: adam
+x_dim:
+  value: 784

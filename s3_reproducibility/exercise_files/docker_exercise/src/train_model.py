@@ -10,19 +10,19 @@ import matplotlib.pyplot as plt
 class TrainDataset(Dataset):
     def __init__(self):
         self.imgs_path = "data/processed/"
-        
-        
+
+
         image_path = os.path.join(self.imgs_path, "train_image.pt")
         label_path = os.path.join(self.imgs_path, "train_label.pt")
 
         self.data = torch.load(image_path)
         self.labels = torch.load(label_path)
-            
+
         assert len(self.data) == len(self.labels)
-             
+
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         sample = {
             'data': self.data[idx],
@@ -33,18 +33,18 @@ class TrainDataset(Dataset):
 class TestDataset(Dataset):
     def __init__(self):
         self.imgs_path = "data/processed/"
-        
+
         image_path = os.path.join(self.imgs_path, "test_image.pt")
         label_path = os.path.join(self.imgs_path, "test_label.pt")
-        
+
         self.data = torch.load(image_path)
         self.labels = torch.load(label_path)
-            
+
         assert len(self.data) == len(self.labels)
-             
+
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         sample = {
             'data': self.data[idx],
@@ -65,7 +65,7 @@ def dataloader():
     return train, test
 
 def plot_fig(train_losses, test_losses):
-    
+
 
 
     epochs = range(1, len(train_losses) + 1)
@@ -153,7 +153,7 @@ def train(lr):
             optimizer.step()
 
             running_loss += loss.item()
-            
+
         else:
             model.eval()
 

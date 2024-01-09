@@ -125,8 +125,8 @@ for epoch in range(epochs):
                 print(batch_idx)
             x = x.view(batch_size, x_dim)
             x = x.to(DEVICE)
-            
-            
+
+
             x_hat, mean, log_var = model(x)
             loss = loss_function(x, x_hat, mean, log_var)
 

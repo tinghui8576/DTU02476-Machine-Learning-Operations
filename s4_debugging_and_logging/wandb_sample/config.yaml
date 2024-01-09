@@ -6,7 +6,7 @@ metric:
 project: exercise_wandb
 entity: tinghui
 parameters:
-  epochs : 
+  epochs :
     value: 10
-  learning_rate: 
+  learning_rate:
     value: 0.002

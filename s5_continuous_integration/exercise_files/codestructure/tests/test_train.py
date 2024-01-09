@@ -23,7 +23,7 @@ def test_train():
     criterion = nn.CrossEntropyLoss()
 
     train_set, test_set = training.dataloader()
-    
+
     for batch in train_set:
         # load data and labels in the batch
         data = batch['data']

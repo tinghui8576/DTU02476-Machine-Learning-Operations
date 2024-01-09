@@ -7,18 +7,18 @@ import sys
 
 class TestDataset(Dataset):
     def __init__(self, file):
-        
+
         image_path = os.path.join(file, "test_image.pt")
         label_path = os.path.join(file, "test_label.pt")
-    
+
         self.data = torch.load(image_path)
         self.labels = torch.load(label_path)
 
         assert len(self.data) == len(self.labels)
-             
+
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         sample = {
             'data': self.data[idx],
@@ -58,24 +58,24 @@ def validation(model, testloader, criterion):
 def loadfile(model_pt, test):
     model = MyNeuralNet()
     state_dict = torch.load(model_pt)
-    model.load_state_dict(state_dict)  
-    
+    model.load_state_dict(state_dict)
+
     testset= TestDataset(test)
     test_set =DataLoader(testset, batch_size=64, shuffle=False)
 
     return model, test_set
-     
+
 
 def predict(
     model: torch.nn.Module,
     dataloader: torch.utils.data.DataLoader
 ) -> None:
     """Run prediction for a given model and dataloader.
-    
+
     Args:
         model: model to use for prediction
         dataloader: dataloader with batches
-    
+
     Returns
         Tensor of shape [N, d] where N is the number of samples and d is the output dimension of the model
 

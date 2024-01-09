@@ -8,7 +8,7 @@ LOGS_DIR = "log"
 
 logging_config = {
     "version": 1,
-    "formatters": { # 
+    "formatters": { #
         "minimal": {"format": "%(message)s"},
         "detailed": {
             "format": "%(levelname)s %(asctime)s [%(name)s:%(filename)s:%(funcName)s:%(lineno)d]\n%(message)s\n"
@@ -49,7 +49,7 @@ logger = logging.getLogger()
 logger.handlers[0] = RichHandler(markup=True)  # set rich handler
 # Create super basic logger
 #logging.basicConfig(stream=sys.stdout, level=logging.INFO)
-#logger = logging.getLogger(__name__) # 
+#logger = logging.getLogger(__name__) #
 
 if __name__ == "__main__":
     # Logging levels (from lowest to highest priority)

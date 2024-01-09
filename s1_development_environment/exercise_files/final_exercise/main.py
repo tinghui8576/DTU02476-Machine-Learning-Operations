@@ -77,7 +77,7 @@ def train(lr):
             optimizer.step()
 
             running_loss += loss.item()
-            
+
         else:
             model.eval()
 
@@ -109,8 +109,8 @@ def evaluate(model_checkpoint):
     # TODO: Implement evaluation logic here
     model = MyAwesomeModel()
     state_dict = torch.load(model_checkpoint)
-    model.load_state_dict(state_dict)  
-     
+    model.load_state_dict(state_dict)
+
     _, test_set = mnist()
     criterion = nn.CrossEntropyLoss()
     _, accuracy = validation(model, test_set,criterion)

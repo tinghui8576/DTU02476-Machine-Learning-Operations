@@ -32,7 +32,7 @@ def train(cfg):
     lr = hparams['lr']
     epochs = hparams['epochs']
 
-    
+
     # Data loading
     mnist_transform = transforms.Compose([transforms.ToTensor()])
 

@@ -10,21 +10,21 @@ from torch.utils.data import Dataset, DataLoader
 class TrainDataset(Dataset):
     def __init__(self):
         self.imgs_path = "/Users/tinghui/workspace/python/dtu_mlops/data/corruptmnist/"
-        
+
         image = glob.glob(self.imgs_path + "*train_image*")
         # label = glob.glob(self.imgs_path + "*train_target*")
         self.data = []
         self.labels = []
         for image_path in image:
-            
+
             root,tail = os.path.split(image_path)
             label_path = os.path.join(root, tail.split("_")[0]+"_target_"+tail.split("_")[-1])
 
             loaded_data = torch.load(image_path)
             loaded_labels = torch.load(label_path)
-            
+
             assert len(loaded_data) == len(loaded_labels)
-            
+
             self.data.extend(loaded_data)
             self.labels.extend(loaded_labels)
 
@@ -32,10 +32,10 @@ class TrainDataset(Dataset):
             transforms.ToTensor(),
             # Add other transformations as needed
         ])
-        
+
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         sample = {
             'data': self.data[idx],
@@ -52,10 +52,10 @@ class TrainDataset(Dataset):
 class TestDataset(Dataset):
     def __init__(self):
         self.imgs_path = "/Users/tinghui/workspace/python/dtu_mlops/data/corruptmnist/"
-        
+
         image_path = os.path.join(self.imgs_path, "test_images.pt")
         label_path = os.path.join(self.imgs_path, "test_target.pt")
-        
+
         self.data =  torch.load(image_path)
         self.labels =  torch.load(label_path)
 
@@ -66,10 +66,10 @@ class TestDataset(Dataset):
             transforms.ToTensor(),
             # Add other transformations as needed
         ])
-        
+
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         sample = {
             'data': self.data[idx],

@@ -1,15 +1,15 @@
 # docker note
 
-# CHECK 
+# CHECK
 
 \# see the available container \
 $ docker images \
 \# check what containers are running \
 $ docker ps \
 \# check all containers(exit and running) \
-$ docker ps -a 
+$ docker ps -a
 
-# RUN and EXIT and REMOVE 
+# RUN and EXIT and REMOVE
 \# using this can run multiple commands within the virtual machine \
 $ docker run -it <NAME> \
 \# to give argument [for mac] \
@@ -17,9 +17,9 @@ $ docker run --name experiment2 --rm -v $(pwd)<Yourpath1>:<Virtualpath1> -v $(pw
 \# to leave the the container \
 /# exit \
 \# to kill specific container \
-$ docker rm <container_id> 
+$ docker rm <container_id>
 
-# BUILD 
+# BUILD
 \# if stay in the parent directory \
 $ docker build -f dockerfile/trainer.dockerfile . -t trainer:latest \
 \# if inside dockerfile directory \

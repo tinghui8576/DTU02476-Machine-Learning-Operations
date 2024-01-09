@@ -137,7 +137,7 @@ def train(config=None):
             loss.backward()
             optimizer.step()
 
-            
+
         print(
             "\tEpoch",
             epoch + 1,
@@ -172,12 +172,10 @@ def train(config=None):
 
 if __name__ == "__main__":
     config_defaults = {
-        "batch_size": 16, 
+        "batch_size": 16,
         "x_dim" : 784,
         "hidden_dim" : 400,
         "latent_dim" : 20,
         "lr" : 1e-3,
         "epochs" : 10}
     train(config_defaults)
-    
-    

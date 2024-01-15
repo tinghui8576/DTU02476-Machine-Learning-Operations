@@ -1,2 +1,7 @@
 fastapi>=0.68.0,<0.69.0
 uvicorn>=0.15.0,<0.16.0
+torch >= 2.1.2
+transformers >= 4.36.2
+opencv-python-headless
+pillow >= 10.2.0
+python-multipart >= 0.0.6

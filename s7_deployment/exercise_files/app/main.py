@@ -1,6 +1,5 @@
 from transformers import VisionEncoderDecoderModel, ViTFeatureExtractor, AutoTokenizer
 import torch
-from PIL import Image
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import FileResponse
 from http import HTTPStatus

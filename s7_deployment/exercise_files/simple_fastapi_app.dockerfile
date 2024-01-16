@@ -1,8 +1,8 @@
 FROM python:3.9-slim
 
-EXPOSE 8080
+EXPOSE $PORT
 
-WORKDIR /app
+WORKDIR /
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -16,4 +16,4 @@ RUN pip install uvicorn
 
 COPY simple_fastapi_app.py simple_fastapi_app.py
 
-CMD exec uvicorn simple_fastapi_app:app --port 8080 --host 0.0.0.0 --workers 1
+CMD exec uvicorn simple_fastapi_app:app --port $PORT --host 0.0.0.0 --workers 1

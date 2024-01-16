@@ -6,9 +6,10 @@ from evidently.metric_preset import (
 from evidently.report import Report
 from evidently.test_preset import DataStabilityTestPreset
 from evidently.test_suite import TestSuite
+from evidently.tests import TestNumberOfMissingValues
 from sklearn import datasets
 
-iris_frame = datasets.load_iris(as_frame="auto").frame
+iris_frame = datasets.load_iris(as_frame=True).frame
 
 data_drift_report = Report(
     metrics=[
@@ -28,6 +29,7 @@ data_drift_report.save_html("test.html")
 data_stability = TestSuite(
     tests=[
         DataStabilityTestPreset(),
+        TestNumberOfMissingValues(),
     ]
 )
 data_stability.run(
